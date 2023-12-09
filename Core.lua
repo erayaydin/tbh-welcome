@@ -152,7 +152,7 @@ function TBHWelcome:ZONE_CHANGED()
     end
 end
 
--- Called when the player used `/wa3` or `/welcomeace3` chat command
+-- Called when the player used `/welcome` chat command
 function TBHWelcome:MainCommand(args)
     if args == "current" then
         self:Print("Current zone message", self.db.profile.zoneMessage)
