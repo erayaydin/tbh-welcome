@@ -155,7 +155,8 @@ end
 -- Called when the player used `/wa3` or `/welcomeace3` chat command
 function TBHWelcome:MainCommand(args)
     if args == "current" then
-        self:Print("Current home message", self.db.profile.message)
+        self:Print("Current zone message", self.db.profile.zoneMessage)
+        self:Print("Current home message", self.db.profile.homeMessage)
     elseif not args or args:trim() == "" then
         InterfaceOptionsFrame_OpenToCategory(self.optionsFrame)
 		InterfaceOptionsFrame_OpenToCategory(self.optionsFrame)
